@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style type="text/css">
+        h1{
+           font-family:  monospace;
+           text-align: center;
+         }
+         #log{
+            border-radius: 6px;
+            padding: 7px;
+            width: 200px;
+         }
+
+         #register{
+            background-color:whitesmoke;
+            border-style:hidden;
+            border-radius: 15px;
+            width: 440px;
+            margin:auto;
+            box-shadow: 0 10px 20px rgba(0, 0.15, 0.5, 0.35);
+         }
+        .submit{
+            background-color: dodgerblue;
+            padding:11px;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+            width:400px;
+        }
+        .submit:hover{
+            background: none;
+            color: black;
+            border-style: solid;
+        }
+        #text{
+            font-size:18px;
+            
+        }
+        .Y{
+           text-align: right;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="register">
+    <table cellspacing="18px">
+           <h1>Register</h1>
+            <form action="http://localhost:3000/register" method="POST">
+                <tr>
+                    <td><p id="text">Name</p></td>
+                    <td><input type="text" id="log" placeholder="enter name" name="Name" required></td>
+                </tr>
+            <tr>
+            
+                <td><p id="text">Email</p></td>
+                <td><input type="email" id= "log" placeholder="enter email" name="Email" required></td>
+            </tr>
+            <tr>
+                <td><p id="text">Address</p></td>
+                <td><input type="text" id="log" placeholder="enter address" name="Address" required></td>
+            </tr>
+            <tr>
+                <td><p id="text">Phone</p></td>
+                <td><input type="text" id="log" placeholder="enter phone" name="Phone" required></td>
+            </tr>
+            <tr>
+                <td id="text" >Gender</td>
+                    <td id="text" >
+                    <input type="radio" name="Gender" value="Female" required>female
+                    <input type="radio" name="Gender" value="Male" required>male
+                 </td>
+            </tr>
+            <tr>
+                <td><p id="text">Password</p></td>
+                <td><input type="password" id="log" placeholder="enter password" name="Password" required></td>
+            </tr>
+            <tr>
+                <td><p id="text">Confirm Password</p></td>
+                <td><input type="password" id="log" placeholder="confirm password" name="ConfirmPassword" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit" class="submit">Submit</button></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"><a href="login.html"><p class="Y">Already have an Account?</p></a></td>
+                <td></td>
+            </tr>
+            </form>
+    </table>
+</div>
+</body>
+</html>
